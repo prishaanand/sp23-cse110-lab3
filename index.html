@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Learning App First Brainstorm</title>
+    <title>Learning App Brainstorm</title>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="16x16" href="learn.png">
+    <link rel="icon" href="learn2.ico">
     
   </head>
   <body>
 
     <header>
-        <h1>Executive Team Meeting Notes</h1>
+        <h1>Learning App: Team Meeting Notes</h1>
         <ul>
             <li>Date: April 12, 2023</li>
             <li>Topic: Brainstorming</li>
@@ -57,7 +57,7 @@
             
         </section>
 
-        <h1> Need to Adress: </h1>
+        <h1> Issues to Address: </h1>
         <section>
             <p>During the meeting, topics that are pending further discussion are listed below. <br>
                 These matters should be worked into the agendas for future meetings so they can be addressed in a timely fashion.</p>
@@ -86,31 +86,142 @@
 
         </section>
 
-        <h1>Meeting Recordings:</h1>
-        <p>Link to the Audio: ** need to do this **</p>
-        <p>Link to the Video: ** need to do tthis **</p>
+        <h2>Meeting Recordings:</h2>
+
+        <figure>
+            <figcaption>Audio Recording:</figcaption>
+            <audio
+                controls
+                src="SampleMeetingAudio.mp3">
+                    
+            </audio>
+        </figure>
+
+        <p>Video Recording: </p>
+
+        <video controls width="450">
+        
+            <source src="SampleMeetingVideo.mp4" type="video/mp4">
+        
+        </video>
 
 
     </main>
 
+    <hr>
+
+    <fieldset>
+    <h2>Using Form Elements:</h2>
+
+    <p>Fill out the following survey on icecream for fun!</p>
+
+    <form method="get" class="form">
+        <div class="form">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class ="form">
+            <label for ="date">Enter your birthday: </label>
+            <input type="date" name ="Date" id="date" required>
+        </div>
+        <div class="form">
+          <input type="submit" value="Subscribe to Future Emails!">
+        </div>
+      </form>
+
+      <br>
+
+      <form>
+        
+          <fieldset>
+          <legend>Choose your favorite icecream flavors:</legend>
+      
+          <input type="radio" id="rocky" name="rocky" value="R">
+          <label for="rocky">Rocky-Road</label><br>
+      
+          <input type="radio" id="neopol" name="neopol" value="N">
+          <label for="neopol">Neopolitan</label><br>
+      
+          <input type="radio" id="carmel" name="carmel" value="C">
+          <label for="carmel">Carmel Swirl</label>
+          </fieldset>
+      </form>
+
+      <br>
+
+      <label for="toppingselection">Choose one free topping:</label>
+        <input list="topping" id="toppingselection" name="toppingselection">
+
+        <datalist id="topping">
+            <option value="Chocolate Chips"></option>
+            <option value="Coconut Shreds"></option>
+            <option value="Rainbow Sprinkes"></option>
+            <option value="Marschino Cherry"></option>
+            <option value="Peanut Butter Cups"></option>
+        </datalist>
+
+        <br>
+        
+        <label for="cone">Choose the cone type:</label>
+
+        <select name="coneset" id="cone">
+            <option value="">Select the type of cone</option>
+            <option value="waffle">Waffle Cone</option>
+            <option value="sugar">Sugar Cone</option>
+            <option value="cup">Signature Cup</option>
+            <option value="cup2">Waffle Cup</option>
+            <option value="choc">Choclate Cone</option>
+            <option value="sprink">Sprinkles Cone</option>
+        </select>
+        
+        <br>
+        <br>
+      
+       <label for="story">Now, create your own icecream flavor. 
+          What would it be called? What would the ingredients be? What color would it be?</label>
+
+          <br>
+        <textarea id="story" name="story"
+                rows="5" cols="33">My new icecream flavor is called...
+        </textarea>
+
+        <br>
+
+        <button class="form"
+            type="button">
+            Finish Survey!
+        </button>
+    </fieldset>
+      
+        
+
+
     <footer>
         
-        <nav>
-            <h3>Resources Used in Creating this Site:</h3>
-            
-            <ol>
-            <li><a href="https://www.w3schools.com/tags/">HTML Element Reference</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla HTML Developer Reference</a></li>
-            <li><a href="https://validator.w3.org/">HTML Validator</a></li>
-            <li><a href="https://notejoy.com/resources/meeting-minutes-template">Sample Meeting Notes</a></li>
-            <li><a href="https://html.spec.whatwg.org/multipage/">Official HTML Specs</a></li>
-            <li><a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a></li>
-            </ol>
-            
-        </nav>
-
-        <hr>
-        <p>Written By: <span>Prisha Anand</span><br>Email: <span>psanand@ucsd.edu</span></p>
+        <h3>About this Site:</h3>
+        <details>
+            <summary>Resources Used:</summary>
+            Below are a list of site used to aid the creation of this page.
+            <nav>
+                <ol>
+                <li><a href="https://www.w3schools.com/tags/">HTML Element Reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla HTML Developer Reference</a></li>
+                <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+                <li><a href="https://notejoy.com/resources/meeting-minutes-template">Sample Meeting Notes</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/">Official HTML Specs</a></li>
+                <li><a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a></li>
+                </ol>     
+            </nav>
+        </details>
+        
+        <details>
+            <summary>Author Info:</summary>
+            <p>Written By: <span>Prisha Anand</span><br>Email: <span>psanand@ucsd.edu</span></p>
+        </details> 
         
     </footer>
       
