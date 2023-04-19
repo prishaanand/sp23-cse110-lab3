@@ -1,5 +1,5 @@
 ---
-name: 'Issue: Task'
+name: 'Task:'
 about: 'Add a task that needs to be completed for the lab project. '
 title: ''
 labels: ''
