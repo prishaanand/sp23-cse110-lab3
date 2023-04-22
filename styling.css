@@ -1,4 +1,9 @@
 
+/*set default margins*/
+* {
+  margin: 1px, 1px;
+}
+
 /*document colors*/
 body {
   background-color:#f1b993f1;
@@ -12,22 +17,38 @@ body {
 
   
   h1 {
-    
-
     color: rgb(197, 88, 142);
     /*absolute unit*/
     margin-left: 20px;
     /*relative unit*/
     font-size: 2em;
-  }
-
+   }
+  
+   
   h1:hover{
       color:rgb(212, 111, 86);
       font-size: 2.5em;
   }
 
+  /*adjacent combinator*/
+  h1 + section {
+    background-color: bisque;
+    border-radius: 2%;
+  }
+
   #pageheading{
     position: static;
+  }
+
+  /*descandent combinator*/
+  #item3 strong{
+    color:rgb(143, 85, 71);
+  }
+
+  /*general sibling combinator*/
+  h1 ~ p {
+    color:rgb(143, 85, 71);
+    margin-left: 4px;
   }
 
   /*flex box for decription */
@@ -118,6 +139,15 @@ body {
       text-align: center;
       font-family: 'Noto Sans JP', sans-serif;
   }
+
+  /*combining two selectors*/
+  div.form{
+    background-color:bisque;
+  }
+
+  fieldset[class = "flavorselect"]{
+    color:rgb(143, 85, 71);
+  }
   
   /*format input text box*/
   #story{
@@ -127,6 +157,12 @@ body {
     width: 500px;
     min-width: fit-content;
     background-color: bisque;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  label{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:rgb(0, 0, 0);
   }
 
   /*format footer content*/
@@ -140,6 +176,12 @@ body {
   /*shadow when finish survey button is clicked*/
   button:active{
     box-shadow: 2px 2px 5px #f1642c;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  /*child combinator*/
+  footer > details {
+    border-top: 5px dashed bisque;
   }
 
   
