@@ -1,8 +1,152 @@
+
+/*document colors*/
 body {
-    background-color: lightblue;
+  background-color:#f1b993f1;
+}
+@media screen and (min-width: 800px){
+  body {
+    /*changes to lighter color when screen size is smaller*/
+    background-color: #eea574f1;
   }
+}
+
   
   h1 {
-    color: navy;
+    
+
+    color: rgb(197, 88, 142);
+    /*absolute unit*/
     margin-left: 20px;
+    /*relative unit*/
+    font-size: 2em;
   }
+
+  h1:hover{
+      color:rgb(212, 111, 86);
+      font-size: 2.5em;
+  }
+
+  #pageheading{
+    position: static;
+  }
+
+  /*flex box for decription */
+  .description{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    color:rgb(212, 111, 86);
+    
+    list-style: none;
+    background: bisque;
+  }
+  #item1, #item2, #item3{
+    margin: 10px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+
+  h2 {
+    color:rgb(212, 111, 86); 
+    /*absolute unit*/
+    margin-left: 0.25in;
+    /*relative unit*/
+    font-size: 3.5vw;
+  }
+
+  h3 {
+    color: rgb(212, 111, 86);  
+    /*absolute unit*/
+    margin-left: 0.75cm;
+    /*relative unit*/
+    font-size: 3ch;
+  }
+
+  /*basic text formating*/
+  body {
+    color:rgb(253, 253, 253); 
+    font-size: 1em;
+    margin: 5% 5%;
+    
+  }
+
+  /*text for audio recording*/
+  figcaption{
+      padding-left: 0.5em;
+      text-decoration: underline;
+  }
+  audio {
+      padding: 2% 0%;
+  }
+
+  /*video element*/
+  #video-elements{
+      padding-left: 3em;
+      padding-bottom: 1em;
+      border-bottom-style: hidden;
+      text-decoration: underline;
+      display: inline-block;
+  }
+
+  /*formant meeting comments*/
+  #comments{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+    background-color:bisque;
+    color:rgb(212, 111, 86);
+    padding: 10px;
+    grid-auto-flow: column;
+  }
+  #bullet1, #bullet2, #bullet3 {
+    margin: 10px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+
+  /*survey formatting*/
+  fieldset{
+      color:rgb(0, 0, 0);
+      font-style: oblique;
+      margin: auto;
+      border: 5px solid #ecd0b9;
+      border-radius: 5%;
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  /*format input text box*/
+  #story{
+    padding-top: 1em;
+    padding-left: 1em;
+    height: 50px; 
+    width: 500px;
+    min-width: fit-content;
+    background-color: bisque;
+  }
+
+  /*format footer content*/
+  details {
+      display: block;
+      position: relative; 
+      left: 40px;
+      top: -20px;
+  }
+
+  /*shadow when finish survey button is clicked*/
+  button:active{
+    box-shadow: 2px 2px 5px #f1642c;
+  }
+
+  
+
+
+
+
+
+  
+
