@@ -4,23 +4,38 @@
     <title>Learning App Brainstorm</title>
     <meta charset="utf-8">
     <link rel="icon" href="learn2.ico">
-    
+    <link rel="stylesheet" href="styling.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+  </style>
+
+
   </head>
+
+    
+
+
+
   <body>
 
     <header>
-        <h1>Learning App: Team Meeting Notes</h1>
-        <ul>
-            <li>Date: April 12, 2023</li>
-            <li>Topic: Brainstorming</li>
-            <li><strong>Attendees:</strong> Braydon Jones, Harry Blokes, Prisha Anand</li>
+        <h1 id="pageheading">Learning App: Team Meeting Notes</h1>
+        <ul class = "description">
+            <li id="item1">Date: April 12, 2023</li>
+            <li id="item2">Topic: Brainstorming</li>
+            <li id="item3"><strong>Attendees:</strong> Braydon Jones, Harry Blokes, Prisha Anand</li>
         </ul>
     </header>
 
     
     <main>
         <h1>Meeting Agenda:</h1>
-        <section>
+        <section id="checklist">
             <h2>The main goals for this meeting:</h2>
 
             <div> 
@@ -47,15 +62,16 @@
                 <input type="checkbox" id="task5" name="task5" checked>
                 <label for="task5"><b>Wrap up</b> and general questions</label>
             </div>
-
-            <h3>Unfinished Business from Last Meeting:</h3>
-
-            <ul>
-                <li>Establish the main goals of the app</li>
-                <li>Discuss with team about feasibility</li>
-            </ul>
             
         </section>
+
+        <h3>Unfinished Business from Last Meeting:</h3>
+
+        <ul>
+            <li>Establish the main goals of the app</li>
+            <li>Discuss with team about feasibility</li>
+        </ul>
+
 
         <h1> Issues to Address: </h1>
         <section>
@@ -73,11 +89,11 @@
 
             <h2>Additional Meeting Comments</h2>
 
-            <ul>
-                <li> <i>Would we be open to investing in profession marketing in order to increase the reach of our app?</i> @Braydon</li>
-                 <li>Might want to add option to continue adding learning content to the app, so that when new curriculum is created
+            <ul id="comments">
+                <li id="bullet1"> <i>Would we be open to investing in profession marketing in order to increase the reach of our app?</i> @Braydon</li>
+                <li id="bullet2">Might want to add option to continue adding learning content to the app, so that when new curriculum is created
                 it can be easily added to the learn section without needing to have another update.</li>
-                <li><i>How much money would this project take, consider costs of reasources as well? </i> @Prisha</li>
+                <li id="bullet3"><i>How much money would this project take, consider costs of reasources as well? </i> @Prisha</li>
             </ul>
             
             <h3> Meeting Diagrams:</h3>
@@ -97,13 +113,17 @@
             </audio>
         </figure>
 
-        <p>Video Recording: </p>
+        <div id="video-elements">
+            <p>Video Recording: </p>
 
-        <video controls width="450">
+            <video controls width="450">
         
-            <source src="SampleMeetingVideo.mp4" type="video/mp4">
+                <source src="SampleMeetingVideo.mp4" type="video/mp4">
         
-        </video>
+            </video>
+
+        </div>
+        
 
 
     </main>
